@@ -144,7 +144,7 @@ function insert_func(){
 		(0<strlen($id))&&(strlen($id)<10)&&(preg_match('/^[0-9]{1,10}$/', $id))
 		&&(0<strlen($last))&&(strlen($id)<20)&&(preg_match('/^[a-z A-Z \- \s]{1,20}$/', $last))
 		&&(0<strlen($first))&&(strlen($id)<20)&&(preg_match('/^[a-z A-Z \- \s]{1,20}$/', $first))
-		&&(0<strlen($major))&&(strlen($id)<20)&&(preg_match('/^[a-z A-Z \- \s]{1,20}$/', $major))
+		&&(0<strlen($major))&&(strlen($id)<50)&&(preg_match('/^[a-z A-Z \- \s]{1,50}$/', $major))
 		&&(0<strlen($gpa))&&(strlen($id)<10)&&(preg_match('/^[0-4]{1}\.[0-9]{1,10}$/', $gpa))
 	){
 
@@ -234,7 +234,7 @@ function update_func(){
 		((0<strlen($id))&&(strlen($id)<10)&&(preg_match('/^[0-9]{1,10}$/', $id)))
 		&&(((0<strlen($last))&&(strlen($id)<20)&&(preg_match('/^[a-z A-Z \- \s]{1,20}$/', $last)))
 			||((0<strlen($first))&&(strlen($id)<20)&&(preg_match('/^[a-z A-Z \- \s]{1,20}$/', $first)))
-			||((0<strlen($major))&&(strlen($id)<20)&&(preg_match('/^[a-z A-Z \- \s]{1,20}$/', $major)))
+			||((0<strlen($major))&&(strlen($id)<50)&&(preg_match('/^[a-z A-Z \- \s]{1,50}$/', $major)))
 			||((0<strlen($gpa))&&(strlen($id)<10)&&(preg_match('/^[0-4]{1}\.[0-9]{1,10}$/', $gpa))))
 	){
 
