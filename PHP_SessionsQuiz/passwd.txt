@@ -1,0 +1,7 @@
+pascal:blaise
+babbage:charles
+hollerith:herman
+zuse:konrad
+aiken:howard
+adan:bob
+evan:johnston

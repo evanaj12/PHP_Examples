@@ -1,0 +1,8 @@
+pascal:blaise
+babbage:charles
+hollerith:herman
+zuse:konrad
+aiken:howard
+adan:bob
+richard:asdf
+oscarev:UT0190610

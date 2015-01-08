@@ -1,0 +1,21 @@
+/*test 3 css - dinner */
+
+html{
+	background-color: black;
+	color:#FFFFCC;
+	font-family: Verdana;
+}
+body{
+	margin: auto;
+	margin-top: 20px;
+	width: 80%;
+	height: 90%;
+	background-color: #006666;
+}
+.box{
+	border: solid 2px #FFFFCC;
+}
+
+.title{
+	font-size: 24px;
+}

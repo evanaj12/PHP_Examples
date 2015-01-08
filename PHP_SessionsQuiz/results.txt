@@ -1,0 +1,2 @@
+evan:60
+pascal:20

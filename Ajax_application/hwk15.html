@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Ajax Login</title>
+
+<!-- Create a new XMLHttpRequest Object -->
+<script type = "text/javascript"> 
+var xhr; 
+    if (window.ActiveXObject) { 
+        xhr = new ActiveXObject ("Microsoft.XMLHTTP"); 
+    } 
+    else if (window.XMLHttpRequest) { 
+        xhr = new XMLHttpRequest (); 
+    } 
+
+function call_server(){
+	var user = document.getElementById("username").value;
+	if (((user == null)||(user == ""))){
+		return;
+	}else{
+		var url = "./hwk15a.php?user="+escape(user);
+		xhr.open("GET", url, true);
+		xhr.onreadystatechange = submit_function;
+		xhr.send(null);
+	}
+}
+
+function submit_function(){
+	if ((xhr.readyState == 4) && (xhr.status == 200)){
+		var response =  xhr.responseText;
+		if (response){
+			alert ("This username is in use.");
+		}
+	}
+}
+
+</script>
+
+</head>
+<body>
+
+	<center>
+	<form method="POST" action="./hwk15b.php">
+	<table>
+	<tr><td colspan="2">Please Login</td></tr>
+	<tr><td>Username:</td><td><input type="text" id="username" name="username" onchange = "call_server();" ></td></tr>
+	<tr><td>Password:</td><td><input type="password" id="pass" name="pass"></td></tr>
+	<tr><td><input type="submit" value="Submit" name="login"></td><td><input type="reset" value="Reset"></td></tr>
+	</table>
+	</form>
+	</center>
+
+</body>
+</html>
