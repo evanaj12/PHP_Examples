@@ -133,7 +133,6 @@ function view_all_func(){
 
 // Get data from a table in the database and print it out
 
-	$table = "dinner";
 	$result = mysqli_query($connect, "SELECT * from $table ORDER BY name");
 	
 	$output=array ();
